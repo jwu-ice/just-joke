@@ -1,3 +1,3 @@
-import { getJoke } from "./src/jokes";
+import { getJoke } from "./src";
 
 export { getJoke };

@@ -1,5 +1,3 @@
-import { getJoke } from "./jokes";
-
 export const API_URL = {
   CHUCK_NORRIS: "https://api.chucknorris.io/jokes/random",
   CHUCK_NORRIS_CATEGORY:

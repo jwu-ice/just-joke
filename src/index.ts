@@ -1,4 +1,4 @@
-import { API_URL, categoryType } from "./const";
+import { API_URL, categoryType } from "./constants";
 
 const { CHUCK_NORRIS, CHUCK_NORRIS_CATEGORY } = API_URL;
 
