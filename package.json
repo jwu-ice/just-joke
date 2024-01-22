@@ -1,0 +1,9 @@
+{
+  "name": "just-joke",
+  "version": "1.0.1",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/jwu-ice/just-joke.git",
+  "author": "Jwu <sju02048@naver.com>",
+  "license": "MIT"
+}
