@@ -7,7 +7,8 @@
     "build:tsc": "yarn tsc --emitDeclarationOnly",
     "build:js": "node build.js",
     "clean": "rm -rf dist",
-    "test": "jest"
+    "test": "jest",
+    "publish:patch": "npm version patch && git push origin --tags"
   },
   "files": [
     "dist",
