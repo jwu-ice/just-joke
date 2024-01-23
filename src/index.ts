@@ -2,7 +2,7 @@ import { API_URL, categoryType } from "./constants";
 
 const { CHUCK_NORRIS, CHUCK_NORRIS_CATEGORY } = API_URL;
 
-export const getJoke = async (category?: categoryType) => {
+const getJoke = async (category?: categoryType) => {
   if (category) {
     const targetUrl = CHUCK_NORRIS_CATEGORY.replace("{category}", category);
     const res = await fetch(targetUrl);
@@ -14,3 +14,5 @@ export const getJoke = async (category?: categoryType) => {
   const { value } = await res.json();
   return value;
 };
+
+export { getJoke };

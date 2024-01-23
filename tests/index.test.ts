@@ -1,4 +1,4 @@
-import { getJoke } from "../src/jokes";
+import { getJoke } from "../src";
 
 describe("joke api test", () => {
   test("random joke", async () => {
