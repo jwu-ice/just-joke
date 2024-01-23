@@ -4,6 +4,8 @@
 
 This is a simple package that just get a random api, including chuck norris joke
 
+<br>
+
 ## User Guide
 
 Using the npm package manager
