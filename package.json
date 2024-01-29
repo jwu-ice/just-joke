@@ -4,7 +4,7 @@
   "scripts": {
     "prepack": "yarn build",
     "build": "yarn clean && yarn build:tsc && yarn build:js",
-    "build:tsc": "yarn tsc --emitDeclarationOnly",
+    "build:tsc": "yarn tsc",
     "build:js": "node build.js",
     "clean": "rm -rf dist",
     "test": "jest",
@@ -22,11 +22,12 @@
     "require": "./dist/index.cjs"
   },
   "keywords": [
-    "jokes",
-    "random",
+    "joke",
+    "random api",
     "funny",
-    "npm",
-    "chuck norris"
+    "chuck norris",
+    "random",
+    "api"
   ],
   "repository": "https://github.com/jwu-ice/just-joke.git",
   "author": "Jwu <sju02048@naver.com>",
