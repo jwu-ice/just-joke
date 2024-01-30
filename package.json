@@ -1,6 +1,6 @@
 {
   "name": "just-joke",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "scripts": {
     "prepack": "yarn build",
     "build": "yarn clean && yarn build:tsc && yarn build:js",
