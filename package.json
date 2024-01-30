@@ -1,6 +1,6 @@
 {
   "name": "just-joke",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "scripts": {
     "build": "yarn clean && yarn build:tsc",
     "build:tsc": "yarn tsc",
@@ -9,6 +9,7 @@
     "publish": "npm version patch && git push origin --tags"
   },
   "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "type": "commonjs",
   "keywords": [
     "joke",
