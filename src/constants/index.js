@@ -3,7 +3,6 @@ const API_URL = {
   CHUCK_NORRIS_CATEGORY:
     "https://api.chucknorris.io/jokes/random?category={category}",
 };
-
 const CATEGORIES = [
   "animal",
   "career",

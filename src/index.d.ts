@@ -1,4 +1,4 @@
-import _ = require("./constants");
+import constants = require("./constants");
 
 /**
 Get a random joke including chuck norris api [Api link](https://api.chucknorris.io/)
@@ -20,7 +20,7 @@ const targetJoke = getJoke(category[0]);
 ```
 */
 declare module "just-joke" {
-  export const getJoke: (
-    category: (typeof _.CATEGORIES)[number]
-  ) => Promise<any>;
+  type categoryType = (typeof constants.CATEGORIES)[number];
+
+  export const getJoke: (category?: categoryType) => Promise<any>;
 }

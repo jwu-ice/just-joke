@@ -8,9 +8,8 @@
     "test": "jest",
     "publish": "npm version patch && git push origin --tags"
   },
-  "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
-  "type": "commonjs",
+  "main": "index.js",
+  "types": "index.d.ts",
   "keywords": [
     "joke",
     "random api",
@@ -20,6 +19,10 @@
     "api"
   ],
   "repository": "https://github.com/jwu-ice/just-joke.git",
+  "bugs": {
+    "email": "sju02048@naver.com",
+    "url": "https://github.com/jwu-ice/just-joke/issues"
+  },
   "author": "Jwu <sju02048@naver.com>",
   "license": "MIT",
   "devDependencies": {

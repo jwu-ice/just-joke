@@ -1,5 +1,5 @@
 node_modules/
 .github/
-tsconfig.json
 .gitattributes
 src/
+tsconfig.json
