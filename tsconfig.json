@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "target": "es6",
     "module": "commonjs",
     "lib": ["es5", "es6", "dom"],
-    "declaration": true,
-    "declarationDir": "./dist/types",
+    "declaration": false,
     "outDir": "dist",
     "strict": true,
     "allowJs": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "typeRoots": ["./types", "./node_modules/@types"]
   },
   "include": ["./src"]
 }

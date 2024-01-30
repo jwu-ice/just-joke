@@ -2,7 +2,7 @@ const API_URL = {
   CHUCK_NORRIS: "https://api.chucknorris.io/jokes/random",
   CHUCK_NORRIS_CATEGORY:
     "https://api.chucknorris.io/jokes/random?category={category}",
-} as const;
+};
 
 const CATEGORIES = [
   "animal",
@@ -21,6 +21,6 @@ const CATEGORIES = [
   "science",
   "sport",
   "travel",
-] as const;
+];
 
-export = { API_URL, CATEGORIES };
+module.exports = { API_URL, CATEGORIES };
