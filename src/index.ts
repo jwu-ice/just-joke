@@ -1,6 +1,7 @@
 import { API_URL, categoryType } from "./constants";
 
 const { CHUCK_NORRIS, CHUCK_NORRIS_CATEGORY } = API_URL;
+
 const getJoke = async (category?: categoryType) => {
   if (category) {
     const targetUrl = CHUCK_NORRIS_CATEGORY.replace("{category}", category);
@@ -13,4 +14,5 @@ const getJoke = async (category?: categoryType) => {
   const { value } = await res.json();
   return value;
 };
+
 export { getJoke };
