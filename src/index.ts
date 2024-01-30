@@ -1,18 +1,36 @@
-import { API_URL, categoryType } from "./constants";
+import constants = require("./constants");
 
-const { CHUCK_NORRIS, CHUCK_NORRIS_CATEGORY } = API_URL;
+const { API_URL, CATEGORIES } = constants;
 
-const getJoke = async (category?: categoryType) => {
+/**
+Get a random joke including chuck norris api [Api link](https://api.chucknorris.io/)
+
+@param undefined - Get a random joke
+@param category - Get a random joke from category
+@returns A random joke string
+
+@example
+```
+import { getJoke, category } from "just-joke";
+
+// Get a random joke
+const joke = getJoke();
+
+// Get a random joke, using category
+const targetJoke = getJoke(category[0]);
+```
+*/
+const getJoke = async (category: (typeof CATEGORIES)[number]) => {
   if (category) {
-    const targetUrl = CHUCK_NORRIS_CATEGORY.replace("{category}", category);
+    const targetUrl = category.replace("{category}", category);
     const res = await fetch(targetUrl);
     const { value } = await res.json();
     return value;
   }
 
-  const res = await fetch(CHUCK_NORRIS);
+  const res = await fetch(API_URL.CHUCK_NORRIS);
   const { value } = await res.json();
   return value;
 };
 
-export { getJoke };
+export = getJoke;
