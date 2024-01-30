@@ -9,7 +9,6 @@
     "publish": "npm version patch && git push origin --tags"
   },
   "main": "dist/index.js",
-  "types": "dist/types",
   "type": "commonjs",
   "keywords": [
     "joke",
