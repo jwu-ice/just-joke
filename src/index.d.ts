@@ -1,6 +1,8 @@
 import constants = require("./constants");
 
-/**
+declare module "just-joke" {
+  type categoryType = (typeof constants.CATEGORIES)[number];
+  /**
 Get a random joke including chuck norris api [Api link](https://api.chucknorris.io/)
 
 @param undefined - Get a random joke
@@ -19,8 +21,5 @@ const joke = getJoke();
 const targetJoke = getJoke(category[0]);
 ```
 */
-declare module "just-joke" {
-  type categoryType = (typeof constants.CATEGORIES)[number];
-
   export const getJoke: (category?: categoryType) => Promise<any>;
 }
